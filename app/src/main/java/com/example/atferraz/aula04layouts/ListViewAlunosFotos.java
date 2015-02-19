@@ -44,7 +44,7 @@ public class ListViewAlunosFotos extends ActionBarActivity {
         listaAlunos.add(new Aluno(10, "Patrícia Carmo", R.drawable.patricia));
 
         listaAlunos.add(new Aluno(11, "Ricardo Gomes", R.drawable.ricardo));
-        listaAlunos.add(new Aluno(12, "Rúben severino", R.drawable.severino));
+        listaAlunos.add(new Aluno(12, "Rúben Severino", R.drawable.severino));
         listaAlunos.add(new Aluno(14, "Rui Ricardo", R.drawable.rui));
         listaAlunos.add(new Aluno(15, "Samuel Santos", R.drawable.samuel));
     }
