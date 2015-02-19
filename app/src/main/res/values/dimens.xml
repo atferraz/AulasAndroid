@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="button_text_size">22sp</dimen>             <!-- testo botões -->
+    <dimen name="button_text_size_low">14sp</dimen>         <!-- texto botões + pequeno -->
+    <dimen name="button_size_landscape">61dp</dimen>        <!-- landscape button size -->
+    <dimen name="button_size_portrait">80dp</dimen>         <!-- portrait button size -->
+    <dimen name="button_size_extra_landscape">120dp</dimen> <!-- tablet landscape button size -->
+    <dimen name="button_size_extra_portrait">100dp</dimen>  <!-- tablet landscape button size -->
+
+    <!-- display -->
+    <dimen name="calc_display_text_size">40sp</dimen>   <!-- display text size -->
+    <dimen name="calc_display_border">2dp</dimen>       <!-- margins mais curtas para o Layout-->
+
+</resources>

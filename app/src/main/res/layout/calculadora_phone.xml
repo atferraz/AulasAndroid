@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ff01010c">
+
+     <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+
+            android:background="@color/calc_display_border">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textViewDisplay"
+                    android:layout_marginTop="@dimen/calc_display_border"
+                    android:layout_marginBottom="@dimen/calc_display_border"
+                    android:layout_marginLeft="@dimen/calc_display_border"
+                    android:layout_marginRight="@dimen/calc_display_border"
+                    android:background="@color/calc_display_background"
+                    android:shadowColor="@color/calc_display_shadowColor"
+                    android:textColor="@color/calc_display_textcolor"
+                    android:gravity="end"
+                    android:text="0"
+                    android:textSize="@dimen/calc_display_text_size"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="CE"
+                android:id="@+id/ClearAll"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="C"
+                android:id="@+id/buttonClearLast"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="M"
+                android:id="@+id/buttonMemory"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="Back"
+                android:id="@+id/buttonBackSpace"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="7"
+                android:id="@+id/button7"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="8"
+                android:id="@+id/button8"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="9"
+                android:id="@+id/button9"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="/"
+                android:id="@+id/buttonOpDiv"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="4"
+                android:id="@+id/button4"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="5"
+                android:id="@+id/button5"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="6"
+                android:id="@+id/button6"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="*"
+                android:id="@+id/buttonOproduto"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal" >
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="1"
+                android:id="@+id/button1"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="2"
+                android:id="@+id/button2"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="3"
+                android:id="@+id/button3"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="-"
+                android:id="@+id/buttonOpSub"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="0"
+                android:id="@+id/button0"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="="
+                android:id="@+id/buttonEquals"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="@dimen/button_size_portrait"
+                android:layout_height="@dimen/button_size_portrait"
+                android:text="+"
+                android:id="@+id/buttonOpSoma"
+                android:onClick="onClickCalcula"
+                android:textColor="@color/calc_button_textcolor"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

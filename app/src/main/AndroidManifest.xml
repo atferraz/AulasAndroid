@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atferraz.aula04layouts" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RelativeLayout"
+            android:label="@string/title_activity_relative_layout" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridLayout"
+            android:label="@string/title_activity_grid_layout" >
+        </activity>
+        <activity
+            android:name=".FrameLayout"
+            android:label="@string/title_activity_frame_layout" >
+        </activity>
+        <activity
+            android:name=".TableLayout"
+            android:label="@string/title_activity_table_layout" >
+        </activity>
+        <activity
+            android:name=".LinearLayoutHorizontal"
+            android:label="@string/title_activity_linear_layout_horizontal" >
+        </activity>
+        <activity
+            android:name=".LinearLayoutVertical"
+            android:label="@string/title_activity_linear_layout_vertical" >
+        </activity>
+        <activity
+            android:name=".ViewsAnimation"
+            android:label="@string/title_activity_views_animation" >
+        </activity>
+        <activity
+            android:name=".Calculadora"
+            android:label="@string/title_activity_calculadora" >
+        </activity>
+        <activity
+            android:name=".ListViewStrings"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name=".ListViewAlunosFotos"
+            android:label="@string/title_activity_lista_alunos" >
+        </activity>
+        <activity
+            android:name=".ListViewStringsFotos"
+            android:label="@string/title_activity_list_view_alunos_strings_foto" >
+        </activity>
+    </application>
+
+</manifest>

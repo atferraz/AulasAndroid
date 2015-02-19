@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.atferraz.aula04layouts.RelativeLayout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout"
+        android:id="@+id/buttonFrameLayout"
+        android:layout_marginTop="51dp"
+        android:onClick="buttonOnClickJump2Activity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridLayout"
+        android:id="@+id/buttonGridLayout"
+        android:layout_below="@+id/buttonFrameLayout"
+        android:layout_alignStart="@+id/buttonFrameLayout"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearLayoutHorizontal"
+        android:id="@+id/buttonLinearLayoutHorizontal"
+        android:layout_below="@+id/buttonGridLayout"
+        android:layout_alignEnd="@+id/buttonGridLayout"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearLayoutVertical"
+        android:id="@+id/buttonLinearLayoutVertical"
+        android:layout_below="@+id/buttonLinearLayoutHorizontal"
+        android:layout_alignEnd="@+id/buttonLinearLayoutHorizontal"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TableLyout"
+        android:id="@+id/buttonTableLyout"
+        android:layout_below="@+id/buttonLinearLayoutVertical"
+        android:layout_alignEnd="@+id/buttonLinearLayoutVertical"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animação de Views"
+        android:id="@+id/buttonViewsAnimation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:id="@+id/buttonCalculadora"
+        android:onClick="buttonOnClickJump2Activity"
+        android:layout_above="@+id/buttonViewsAnimation"
+        android:layout_alignRight="@+id/buttonViewsAnimation"
+        android:layout_alignEnd="@+id/buttonViewsAnimation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListViewStrings"
+        android:id="@+id/buttonListViewStrings"
+        android:onClick="buttonOnClickJump2Activity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListViewFotos"
+        android:id="@+id/buttonListViewFotos"
+        android:layout_above="@+id/buttonListViewStrings"
+        android:layout_alignLeft="@+id/buttonListViewStrings"
+        android:layout_alignStart="@+id/buttonListViewStrings"
+        android:nestedScrollingEnabled="true"
+        android:onClick="buttonOnClickJump2Activity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListViewStringsFotos"
+        android:id="@+id/buttonListViewStringsFotos"
+        android:nestedScrollingEnabled="true"
+        android:onClick="buttonOnClickJump2Activity"
+        android:layout_above="@+id/buttonListViewFotos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

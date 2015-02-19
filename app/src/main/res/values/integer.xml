@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Integer vars -->
+
+    <integer name="anim_duration">1000</integer>   <!-- Default screen transition time -->
+
+</resources>
