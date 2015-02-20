@@ -37,7 +37,7 @@ public class ListViewStrings extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                String str = "Clicou em"+ String.valueOf(parent.getItemAtPosition(position));
+                String str = "Clicou em "+ String.valueOf(parent.getItemAtPosition(position));
                 Toast.makeText(ListViewStrings.this, str, Toast.LENGTH_SHORT).show();
             }
         });
