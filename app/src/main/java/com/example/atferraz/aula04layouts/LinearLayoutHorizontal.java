@@ -36,7 +36,7 @@ public class LinearLayoutHorizontal extends ActionBarActivity {
                 break;
 
             case "GridLayout" :
-                startActivityForResult(new Intent(b.getContext(), GridLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutGrid.class), 0);
                 break;
 
             case "LinearLayoutHorizontal" :

@@ -29,7 +29,7 @@ public class Calculadora extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculadora_phone);
 /*
-        // Fragmentmanager permite manipular Fragments
+        // Fragmentmanager permite manipular FragmentsBasic
         FragmentManager fragManeger = getFragmentManager();
 
         // FragmentTransaction associar, remover, substituir fragments à activity

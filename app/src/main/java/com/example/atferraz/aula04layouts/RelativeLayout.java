@@ -39,7 +39,7 @@ public class RelativeLayout extends ActionBarActivity {
                 break;
 
             case "GridLayout" :
-                startActivityForResult(new Intent(b.getContext(), GridLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutGrid.class), 0);
                 break;
 
             case "LinearLayoutHorizontal" :
@@ -70,6 +70,12 @@ public class RelativeLayout extends ActionBarActivity {
                 break;
             case "ListViewFotos" :
                 startActivityForResult(new Intent(b.getContext(), ListViewAlunosFotos.class), 0);
+                break;
+            case "FragmentsBasic" :
+                startActivityForResult(new Intent(b.getContext(), FragmentsBasic.class), 0);
+                break;
+            case "FragmentsSliddingFixed" :
+                startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 1);
                 break;
 
 

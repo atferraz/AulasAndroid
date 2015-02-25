@@ -103,4 +103,24 @@
         android:layout_above="@+id/buttonListViewFotos"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentsBasic"
+        android:id="@+id/buttonFragmentsBasic"
+        android:onClick="buttonOnClickJump2Activity"
+        android:layout_above="@+id/buttonGridLayout"
+        android:layout_alignLeft="@+id/buttonViewsAnimation"
+        android:layout_alignStart="@+id/buttonViewsAnimation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentsSliddingFixed"
+        android:id="@+id/buttonFragmentsSliddingFixed"
+        android:layout_below="@+id/buttonFragmentsBasic"
+        android:layout_alignRight="@+id/buttonFragmentsBasic"
+        android:layout_alignEnd="@+id/buttonFragmentsBasic"
+        android:onClick="buttonOnClickJump2Activity" />
 </RelativeLayout>

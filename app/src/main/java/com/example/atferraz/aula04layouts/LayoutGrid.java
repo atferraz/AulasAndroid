@@ -12,7 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 
-public class GridLayout extends ActionBarActivity {
+public class LayoutGrid extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class GridLayout extends ActionBarActivity {
                 break;
 
             case "GridLayout" :
-                startActivityForResult(new Intent(b.getContext(), GridLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutGrid.class), 0);
                 break;
 
             case "LinearLayoutHorizontal" :

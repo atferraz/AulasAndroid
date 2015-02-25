@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GridLayout"
+            android:name=".LayoutGrid"
             android:label="@string/title_activity_grid_layout" >
         </activity>
         <activity
@@ -55,6 +55,10 @@
         <activity
             android:name=".ListViewStringsFotos"
             android:label="@string/title_activity_list_view_alunos_strings_foto" >
+        </activity>
+        <activity
+            android:name=".FragmentsBasic"
+            android:label="@string/title_activity_fragments" >
         </activity>
     </application>
 
