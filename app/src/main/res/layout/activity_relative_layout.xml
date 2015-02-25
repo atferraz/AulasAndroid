@@ -15,7 +15,8 @@
         android:onClick="buttonOnClickJump2Activity"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -24,7 +25,8 @@
         android:id="@+id/buttonGridLayout"
         android:layout_below="@+id/buttonFrameLayout"
         android:layout_alignStart="@+id/buttonFrameLayout"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,7 +35,8 @@
         android:id="@+id/buttonLinearLayoutHorizontal"
         android:layout_below="@+id/buttonGridLayout"
         android:layout_alignEnd="@+id/buttonGridLayout"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -42,7 +45,8 @@
         android:id="@+id/buttonLinearLayoutVertical"
         android:layout_below="@+id/buttonLinearLayoutHorizontal"
         android:layout_alignEnd="@+id/buttonLinearLayoutHorizontal"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -51,7 +55,8 @@
         android:id="@+id/buttonTableLyout"
         android:layout_below="@+id/buttonLinearLayoutVertical"
         android:layout_alignEnd="@+id/buttonLinearLayoutVertical"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -60,7 +65,8 @@
         android:id="@+id/buttonViewsAnimation"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,7 +76,8 @@
         android:onClick="buttonOnClickJump2Activity"
         android:layout_above="@+id/buttonViewsAnimation"
         android:layout_alignRight="@+id/buttonViewsAnimation"
-        android:layout_alignEnd="@+id/buttonViewsAnimation" />
+        android:layout_alignEnd="@+id/buttonViewsAnimation"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -80,7 +87,8 @@
         android:onClick="buttonOnClickJump2Activity"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -91,7 +99,8 @@
         android:layout_alignLeft="@+id/buttonListViewStrings"
         android:layout_alignStart="@+id/buttonListViewStrings"
         android:nestedScrollingEnabled="true"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -102,25 +111,43 @@
         android:onClick="buttonOnClickJump2Activity"
         android:layout_above="@+id/buttonListViewFotos"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FragmentsBasic"
-        android:id="@+id/buttonFragmentsBasic"
+        android:text="FragmentsBasicXml"
+        android:id="@+id/buttonFragmentsBasicXml"
         android:onClick="buttonOnClickJump2Activity"
-        android:layout_above="@+id/buttonGridLayout"
-        android:layout_alignLeft="@+id/buttonViewsAnimation"
-        android:layout_alignStart="@+id/buttonViewsAnimation" />
+        android:layout_alignTop="@+id/buttonFrameLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/buttonFrameLayout"
+        android:layout_toEndOf="@+id/buttonListViewStrings"
+        android:textSize="12sp"
+        android:layout_alignLeft="@+id/FragmentsBasicJava"
+        android:layout_alignStart="@+id/FragmentsBasicJava" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FragmentsSliddingFixed"
         android:id="@+id/buttonFragmentsSliddingFixed"
-        android:layout_below="@+id/buttonFragmentsBasic"
-        android:layout_alignRight="@+id/buttonFragmentsBasic"
-        android:layout_alignEnd="@+id/buttonFragmentsBasic"
-        android:onClick="buttonOnClickJump2Activity" />
+        android:layout_below="@+id/buttonFragmentsBasicXml"
+        android:layout_alignRight="@+id/buttonFragmentsBasicXml"
+        android:layout_alignEnd="@+id/buttonFragmentsBasicXml"
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentsBasicJava"
+        android:id="@+id/FragmentsBasicJava"
+        android:layout_above="@+id/buttonFragmentsBasicXml"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonOnClickJump2Activity"
+        android:textSize="12sp" />
 </RelativeLayout>

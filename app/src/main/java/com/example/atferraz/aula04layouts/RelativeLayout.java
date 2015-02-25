@@ -71,11 +71,17 @@ public class RelativeLayout extends ActionBarActivity {
             case "ListViewFotos" :
                 startActivityForResult(new Intent(b.getContext(), ListViewAlunosFotos.class), 0);
                 break;
-            case "FragmentsBasic" :
-                startActivityForResult(new Intent(b.getContext(), FragmentsBasic.class), 0);
+            case "FragmentsBasicXml" :
+                startActivityForResult(new Intent(b.getContext(), FragmentsBasicXml.class), 0);
+                break;
+            case "FragmentsBasicJava" :
+                startActivityForResult(new Intent(b.getContext(), FragmentsBasicJava.class), 0);
                 break;
             case "FragmentsSliddingFixed" :
-                startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 0);
+                msgBox.setTitle("ATENÇÃO");
+                msgBox.setMessage("Resolver ERRO: startActivityForResult(fragment) ");
+                msgBox.show();
+                //startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 0);
                 break;
 
 

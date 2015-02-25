@@ -57,8 +57,12 @@
             android:label="@string/title_activity_list_view_alunos_strings_foto" >
         </activity>
         <activity
-            android:name=".FragmentsBasic"
+            android:name=".FragmentsBasicXml"
             android:label="@string/title_activity_fragments" >
+        </activity>
+        <activity
+            android:name=".FragmentsBasicJava"
+            android:label="@string/title_activity_fragment_basic_java" >
         </activity>
     </application>
 

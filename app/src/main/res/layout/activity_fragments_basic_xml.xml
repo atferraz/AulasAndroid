@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#00BBFF"
-    tools:context="com.example.atferraz.aula04layouts.FragmentsBasic"
-    android:id="@+id/activity_fragment">
+    tools:context="com.example.atferraz.aula04layouts.FragmentsBasicXml"
+    android:id="@+id/activity_fragment_xml">
 
 
     <fragment
