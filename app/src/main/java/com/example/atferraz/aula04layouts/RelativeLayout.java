@@ -75,7 +75,7 @@ public class RelativeLayout extends ActionBarActivity {
                 startActivityForResult(new Intent(b.getContext(), FragmentsBasic.class), 0);
                 break;
             case "FragmentsSliddingFixed" :
-                startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 1);
+                startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 0);
                 break;
 
 

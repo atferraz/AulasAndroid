@@ -9,7 +9,7 @@ import android.support.v4.view.ViewPager;
 
 public class FragmentsTabsSlidding extends FragmentActivity {
 
-    ViewPager viewPager = null;     // Criação de um ViewPager para controlo do
+    static ViewPager viewPager = null;     // Criação de um ViewPager para controlo do
                                     // Slidding como atributo para acesso geral.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
