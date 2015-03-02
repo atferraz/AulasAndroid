@@ -53,7 +53,7 @@
             android:label="@string/title_activity_lista_alunos" >
         </activity>
         <activity
-            android:name=".ListViewStringsFotos"
+            android:name=".ListViewStringsWithImage"
             android:label="@string/title_activity_list_view_alunos_strings_foto" >
         </activity>
         <activity

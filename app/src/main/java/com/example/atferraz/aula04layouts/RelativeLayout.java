@@ -66,7 +66,7 @@ public class RelativeLayout extends ActionBarActivity {
                 startActivityForResult(new Intent(b.getContext(), ListViewStrings.class), 0);
                 break;
             case "ListViewStringsFotos" :
-                startActivityForResult(new Intent(b.getContext(), ListViewStringsFotos.class), 0);
+                startActivityForResult(new Intent(b.getContext(), ListViewStringsWithImage.class), 0);
                 break;
             case "ListViewFotos" :
                 startActivityForResult(new Intent(b.getContext(), ListViewAlunosFotos.class), 0);
