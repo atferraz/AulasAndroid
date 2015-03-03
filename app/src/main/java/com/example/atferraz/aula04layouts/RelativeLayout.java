@@ -78,10 +78,18 @@ public class RelativeLayout extends ActionBarActivity {
                 startActivityForResult(new Intent(b.getContext(), FragmentsBasicJava.class), 0);
                 break;
             case "FragmentsSliddingFixed" :
-                msgBox.setTitle("ATENÇÃO");
-                msgBox.setMessage("Resolver ERRO: startActivityForResult(fragment) ");
-                msgBox.show();
-                //startActivityForResult(new Intent(b.getContext(), FragmentsTabsSlidding.class), 0);
+                //msgBox.setTitle("ATENÇÃO");
+                //msgBox.setMessage("Resolver ERRO: startActivityForResult(fragment) ");
+                //msgBox.show();
+                startActivityForResult(new Intent(this, FragmentsTabsSlidding.class), 0);
+
+                // From a Fragment:
+                // Intent intent = new Intent(getActivity(), mFragmentFavorite.class);
+                // startActivity(intent);
+
+                //From an Activity
+                //Intent intent = new Intent(this, mFragmentFavorite.class);
+                //startActivity(intent);
                 break;
 
 
