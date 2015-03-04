@@ -13,7 +13,6 @@ public class FragmentsBasicJava extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_basic);
 
-
         FragmentA fragA = new FragmentA();                                      // Cria um novo objeto da nossa classe.
         FragmentManager fragManager = getFragmentManager();                     // Cria um FragmentManager
         FragmentTransaction fragTransaction = fragManager.beginTransaction();   // Cria e inicia a transaction

@@ -2,7 +2,6 @@ package com.example.atferraz.aula04layouts;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -10,8 +9,8 @@ import android.support.v7.app.ActionBarActivity;
 
 public class FragmentsTabsSlidding extends ActionBarActivity {
 
-    static ViewPager viewPager = null;     // Criação de um ViewPager para controlo do
-                                    // Slidding como atributo para acesso geral.
+    static ViewPager viewPager = null;      // Criação de um ViewPager para controlo do
+                                            // Slidding como atributo para acesso geral.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
