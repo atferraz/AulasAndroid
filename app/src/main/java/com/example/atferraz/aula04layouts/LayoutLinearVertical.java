@@ -12,14 +12,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 
-public class LinearLayoutHorizontal extends ActionBarActivity {
+public class LayoutLinearVertical extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_layout_horizontal);
+        setContentView(R.layout.activity_linear_layout_vertical);
     }
-
 
     // Salta para uma activity, passada pela View b
     public void buttonOnClickJump2Activity(View b) {
@@ -32,7 +31,7 @@ public class LinearLayoutHorizontal extends ActionBarActivity {
         switch(((Button)b).getText().toString())    // extrai o Text do botão
         {
             case "FrameLayout" :
-                startActivityForResult(new Intent(b.getContext(), FrameLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutFrame.class), 0);
                 break;
 
             case "GridLayout" :
@@ -40,18 +39,18 @@ public class LinearLayoutHorizontal extends ActionBarActivity {
                 break;
 
             case "LinearLayoutHorizontal" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutHorizontal.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearHorizontal.class), 0);
                 break;
 
             case "LinearLayoutVertical" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutVertical.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearVertical.class), 0);
                 break;
 
             case "RelativeLayout" :
-                startActivityForResult(new Intent(b.getContext(), RelativeLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutRelative.class), 0);
                 break;
             case "TableLayout" :
-                startActivityForResult(new Intent(b.getContext(), TableLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutTable.class), 0);
                 break;
 
             default :
@@ -63,14 +62,14 @@ public class LinearLayoutHorizontal extends ActionBarActivity {
         }
 
         // animaçao da activity. É um método void que recebe os ids das xml com a animação
-        overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
+        overridePendingTransition(R.anim.abc_fade_out, R.anim.translate_all_right);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_linear_layout_horizontal, menu);
+        getMenuInflater().inflate(R.menu.menu_linear_layout_vertical, menu);
         return true;
     }
 

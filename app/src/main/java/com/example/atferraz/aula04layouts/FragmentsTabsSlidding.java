@@ -16,10 +16,10 @@ public class FragmentsTabsSlidding extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragments_tabs_slidding);
 
-        // No arranque da activity liga-se o Viewpager ao Layout da activity
+        // Lgação do Viewpager ao Layout da activity que vai suportar o slidding
         viewPager = (ViewPager) findViewById(R.id.fragmentsTabsSlidding);
 
-        // Associa o novo FragmentAdapter ao ViewPager
+        // Associa o FragmentAdapter ao ViewPager
         FragmentManager fm = getSupportFragmentManager();   // da support.v4
         viewPager.setAdapter(new MeuFragmentAdapter(fm));
     }
@@ -50,5 +50,5 @@ class MeuFragmentAdapter extends FragmentPagerAdapter{
     @Override
     public int getCount() {                         // devolve o nº de Fragments tratados nesta activity
         return 3;
-    }
+    }       // nº de fragemnts a tratar
 }

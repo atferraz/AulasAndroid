@@ -32,7 +32,7 @@ public class LayoutGrid extends ActionBarActivity {
         switch(((Button)b).getText().toString())    // extrai o Text do botão
         {
             case "FrameLayout" :
-                startActivityForResult(new Intent(b.getContext(), FrameLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutFrame.class), 0);
                 break;
 
             case "GridLayout" :
@@ -40,18 +40,18 @@ public class LayoutGrid extends ActionBarActivity {
                 break;
 
             case "LinearLayoutHorizontal" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutHorizontal.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearHorizontal.class), 0);
                 break;
 
             case "LinearLayoutVertical" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutVertical.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearVertical.class), 0);
                 break;
 
             case "RelativeLayout" :
-                startActivityForResult(new Intent(b.getContext(), RelativeLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutRelative.class), 0);
                 break;
             case "TableLayout" :
-                startActivityForResult(new Intent(b.getContext(), TableLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutTable.class), 0);
                 break;
 
             default :

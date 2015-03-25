@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class RelativeLayout extends ActionBarActivity {
+public class LayoutRelative extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class RelativeLayout extends ActionBarActivity {
         switch(((Button)b).getText().toString())    // extrai o Text do botão
         {
             case "FrameLayout" :
-                startActivityForResult(new Intent(b.getContext(), FrameLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutFrame.class), 0);
                 break;
 
             case "GridLayout" :
@@ -43,18 +43,18 @@ public class RelativeLayout extends ActionBarActivity {
                 break;
 
             case "LinearLayoutHorizontal" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutHorizontal.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearHorizontal.class), 0);
                 break;
 
             case "LinearLayoutVertical" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutVertical.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearVertical.class), 0);
                 break;
 
             case "RelativeLayout" :
-                startActivityForResult(new Intent(b.getContext(), RelativeLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutRelative.class), 0);
                 break;
             case "TableLayout" :
-                startActivityForResult(new Intent(b.getContext(), TableLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutTable.class), 0);
                 break;
             case "Animação de Views" :
                 startActivityForResult(new Intent(b.getContext(), ViewsAnimation.class), 0);
@@ -111,7 +111,7 @@ public class RelativeLayout extends ActionBarActivity {
     // metodo para associar criar uma msgBox do tipo Toast (método da classe super)
     public void buttonOnClickToast(View b){
 
-        Toast.makeText(RelativeLayout.this, "Botão clicado foi: " +
+        Toast.makeText(LayoutRelative.this, "Botão clicado foi: " +
                 ((Button) b).getText(), Toast.LENGTH_LONG).show();
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////

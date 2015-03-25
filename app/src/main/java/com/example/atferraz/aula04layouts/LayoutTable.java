@@ -12,26 +12,27 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 
-public class FrameLayout extends ActionBarActivity {
+public class LayoutTable extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_frame_layout);
+        setContentView(R.layout.activity_table_layout);
     }
+
 
     // Salta para uma activity, passada pela View b
     public void buttonOnClickJump2Activity(View b) {
 
         //Animação do botão
-        Animation viewAnim = AnimationUtils.loadAnimation(this, R.anim.scale_up);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         // associação ao botão que chamar o presente método.
-        b.startAnimation(viewAnim);
+        b.startAnimation(animation);
 
-        switch(((Button)b).getText().toString())    // extrai o Text do botão
+        switch(((Button)b).getText().toString())    // switch ao Text do botão
         {
             case "FrameLayout" :
-                startActivityForResult(new Intent(b.getContext(), FrameLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutFrame.class), 0);
                 break;
 
             case "GridLayout" :
@@ -39,18 +40,18 @@ public class FrameLayout extends ActionBarActivity {
                 break;
 
             case "LinearLayoutHorizontal" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutHorizontal.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearHorizontal.class), 0);
                 break;
 
             case "LinearLayoutVertical" :
-                startActivityForResult(new Intent(b.getContext(), LinearLayoutVertical.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutLinearVertical.class), 0);
                 break;
 
             case "RelativeLayout" :
-                startActivityForResult(new Intent(b.getContext(), RelativeLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutRelative.class), 0);
                 break;
             case "TableLayout" :
-                startActivityForResult(new Intent(b.getContext(), TableLayout.class), 0);
+                startActivityForResult(new Intent(b.getContext(), LayoutTable.class), 0);
                 break;
 
             default :
@@ -62,14 +63,13 @@ public class FrameLayout extends ActionBarActivity {
         }
 
         // animaçao da activity. É um método void que recebe os ids das xml com a animação
-        overridePendingTransition(R.anim.abc_slide_in_top, R.anim.abc_slide_out_bottom);
+        overridePendingTransition(R.anim.scale_up, R.anim.abc_fade_out);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_frame_layout, menu);
+        getMenuInflater().inflate(R.menu.menu_table_layout, menu);
         return true;
     }
 

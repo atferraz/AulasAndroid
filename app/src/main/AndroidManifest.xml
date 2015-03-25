@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".RelativeLayout"
+            android:name=".LayoutRelative"
             android:label="@string/title_activity_relative_layout" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,19 +21,19 @@
             android:label="@string/title_activity_grid_layout" >
         </activity>
         <activity
-            android:name=".FrameLayout"
+            android:name=".LayoutFrame"
             android:label="@string/title_activity_frame_layout" >
         </activity>
         <activity
-            android:name=".TableLayout"
+            android:name=".LayoutTable"
             android:label="@string/title_activity_table_layout" >
         </activity>
         <activity
-            android:name=".LinearLayoutHorizontal"
+            android:name=".LayoutLinearHorizontal"
             android:label="@string/title_activity_linear_layout_horizontal" >
         </activity>
         <activity
-            android:name=".LinearLayoutVertical"
+            android:name=".LayoutLinearVertical"
             android:label="@string/title_activity_linear_layout_vertical" >
         </activity>
         <activity
